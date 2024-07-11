@@ -77,20 +77,20 @@
   @apply relative z-10 flex justify-center items-center flex-col max-w-7xl mx-auto sm:px-16 px-6;
 }
 
-.black_btn {
-  @apply rounded-full border border-black bg-black py-1.5 px-5 text-white transition-all hover:bg-white hover:text-black text-center text-sm font-inter flex items-center justify-center;
+.blue_btn {
+  @apply rounded-full border border-blue-600 bg-blue-600 py-1.5 px-5 text-white transition-all hover:bg-white hover:text-blue-600 text-center text-base font-inter flex items-center justify-center duration-300;
 }
 
 .outline_btn {
-  @apply rounded-full border border-black bg-transparent py-1.5 px-5 text-black transition-all hover:bg-black hover:text-white text-center text-sm font-inter flex items-center justify-center;
+  @apply rounded-full border border-blue-600 bg-transparent py-1.5 px-5 text-blue-600 transition-all hover:bg-blue-600 hover:text-white text-center text-base font-inter flex items-center justify-center;
 }
 
 .head_text {
   @apply mt-5 text-5xl font-extrabold leading-[1.15] text-black sm:text-6xl;
 }
 
-.orange_gradient {
-  @apply bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent;
+.violet_gradient {
+  @apply bg-gradient-to-r from-cyan-500 via-violet-600 to-cyan-500 bg-clip-text text-transparent;
 }
 
 .green_gradient {
@@ -137,11 +137,11 @@
 
 /* Nav Component */
 .logo_text {
-  @apply max-sm:hidden font-satoshi font-semibold text-lg text-black tracking-wide;
+  @apply max-sm:hidden font-satoshi font-bold text-2xl text-black tracking-wide;
 }
 
 .dropdown {
-  @apply absolute right-0 top-full mt-3 w-full p-5 rounded-lg bg-white min-w-[210px] flex flex-col gap-2 justify-end items-end;
+  @apply absolute py-3 right-0 top-full mt-3 w-full p-10 rounded-lg bg-indigo-200 min-w-[210px] flex flex-col gap-2 justify-center items-center;
 }
 
 .dropdown_link {
