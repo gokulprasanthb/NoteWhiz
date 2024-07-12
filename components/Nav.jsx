@@ -18,11 +18,13 @@ const Nav = () => {
   
   return (
     <nav className="flex-between w-full mb-16 pt-3">
-      <Link href="/" className="flex gap-2 flex-center"><Image width={50} height={50} className="object-contain" src="/assets/images/chatLogo.svg"></Image><p className="logo_text">Chatsheet</p></Link>
+      <Link href="/" className="flex gap-2 flex-center"><Image width={50} height={50} className="object-contain" src="/assets/images/logo.svg"></Image><p className="logo_text">NoteWhiz</p></Link>
 
       {/* pc nav */}
-      <div className="sm:flex hidden">
-        {isUserLoggedIn ? (
+      <div className="sm:flex">
+      <Link href="/create-prompt" className="blue_btn">Create Notes</Link>
+
+        {/* {isUserLoggedIn ? (
           <div className="flex gap-3 md:gap-5">
             <Link href="/create-prompt" className="blue_btn">Create Post </Link>
             <button type="button" onClick={signOut} className="outline_btn">Sign Out</button>
@@ -36,15 +38,18 @@ const Nav = () => {
               </button>
             ))}
           </>
-        )}
+        )} */}
       </div>
 
       {/* mob nav */}
-      <div className='sm:hidden flex relative'>
+      {/* <div className='sm:hidden flex relative'>
+        <Image width={40} height={40} className="rounded-full" src="/assets/images/user.svg" onClick={() => setToggleDropdown((prev) => !prev)}></Image>
+        <button type='button' onClick={() => {setToggleDropdown(false); signOut();}} className='mt-5 w-full blue_btn'>Sign Out</button>
         {isUserLoggedIn ? (
           <div className='flex'>
            <Image width={40} height={40} className="rounded-full" src="/assets/images/user.svg" onClick={() => setToggleDropdown((prev) => !prev)}></Image>
-
+           <button type='button' onClick={() => {setToggleDropdown(false); signOut();}} className='mt-5 w-full blue_btn'>Sign Out</button>
+           
             {toggleDropdown && (
               <div className='dropdown space-y-3 py-2'>
                 <Link href='/profile' className='dropdown_link' onClick={() => setToggleDropdown(false)}> My Profile </Link>
@@ -61,7 +66,7 @@ const Nav = () => {
               ))}
           </>
         )}
-      </div>
+      </div> */}
 
     </nav>
   )

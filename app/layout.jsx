@@ -2,8 +2,8 @@ import Nav from '@components/Nav';
 import '@styles/globals.css';
 
 export const metadata = {
-    title: "Chatsheet",
-    description: "Engage with the world around you.",
+    title: "NoteWhiz",
+    description: "The Whiz Kid of Note-Taking",
 };
 
 const RootLayout = ({ children }) => {

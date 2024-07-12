@@ -3,11 +3,11 @@ import Feed from "@components/Feed";
 const Home = () => {
    return(
     <section className="w-full flex-center flex-col">
-        <h1 className="head_text text-center">Dive into a vibrant digital town square where 
+        <h1 className="head_text text-center">Achieve expert-level organization with NoteWhiz, 
             <br className="max-md:hidden"/>
-            <span className="violet_gradient text-center"> your ideas resonate globally</span>
+            <span className="violet_gradient text-center">the ultimate choice for efficient and structured notes. </span>
         </h1>
-        <p className="desc text-center">Chatsheet is a place where your voice is heard and your ideas take flight. you can effortlessly broadcast your moments, engage with trending topics, and interact with a diverse network of people from all around the world. </p>
+        <p className="desc text-center">NoteWhiz suggests expertise and proficiency in handling notes. Be a whiz at note-taking with NoteWhiz, the expert’s choice for organized notes.</p>
 
         <Feed/>
     </section>
